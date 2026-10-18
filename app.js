@@ -12,8 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 app.get('/', function(req, res){
-  res.render('index');
- 
+  res.render('index', { weather: null, error: null }); 
 })
 
 
